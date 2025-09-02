@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizador de Eventos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-purple-50 to-pink-50 min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <!-- Header -->
+        <div class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-gray-800 mb-2">🎉 Cotizador de Eventos</h1>
+            <p class="text-gray-600">Selecciona los servicios para tu evento perfecto</p>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-8">
+            <!-- Formulario de servicios -->
+            <div class="lg:col-span-2 space-y-6">
+                
+                <!-- Platos Fuertes -->
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <h2 class="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
+                        🍽️ Platos Fuertes
+                    </h2>
+                    <div class="space-y-3">
+                        <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer">
+                            <input type="radio" name="platos" value="baby-beef" data-price="25000" class="mr-3 text-purple-600">
+                            <div class="w-16 h-16 mr-4 flex-shrink-0">
+                                <svg viewBox="0 0 100 100" class="w-full h-full">
+                                    <circle cx="50" cy="50" r="45" fill="#8B4513" stroke="#654321" stroke-width="2"/>
+                                    <ellipse cx="50" cy="50" rx="35" ry="25" fill="#A0522D"/>
+                                    <ellipse cx="50" cy="50" rx="25" ry="15" fill="#CD853F"/>
+                                    <circle cx="35" cy="40" r="3" fill="#654321"/>
+                                    <circle cx="65" cy="45" r="2" fill="#654321"/>
+                                    <path d="M30 65 Q50 70 70 65" stroke="#228B22" stroke-width="3" fill="none"/>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <span class="font-medium">Baby Beef</span>
+                                <p class="text-sm text-gray-600">Tierno corte de res con guarnición</p>
+                            </div>
+                            <span class="font-semibold text-purple-600">$25,000</span>
+                        </label>
+                        <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer">
+                            <input type="radio" name="platos" value="pechuga-camaron" data-price="22000" class="mr-3 text-purple-600">
+                            <div class="w-16 h-16 mr-4 flex-shrink-0">
+                                <svg viewBox="0 0 100 100" class="w-full h-full">
+                                    <ellipse cx="50" cy="50" rx="40" ry="25" fill="#F5DEB3" stroke="#DEB887" stroke-width="2"/>
+                                    <ellipse cx="50" cy="50" rx="30" ry="18" fill="#FFE4B5"/>
+                                    <circle cx="25" cy="35" r="4" fill="#FF6347"/>
+                                    <circle cx="35" cy="30" r="3" fill="#FF6347"/>
+                                    <circle cx="65" cy="40" r="4" fill="#FF6347"/>
+                                    <circle cx="75" cy="35" r="3" fill="#FF6347"/>
+                                    <path d="M20 70 Q50 75 80 70" stroke="#FFA500" stroke-width="4" fill="none"/>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <span class="font-medium">Pechuga en Salsa de Camarón</span>
+                                <p class="text-sm text-gray-600">Pechuga jugosa con cremosa salsa de camarón</p>
+                            </div>
+                            <span class="font-semibold text-purple-600">$22,000</span>
+                        </label>
+                        <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer">
+                            <input type="radio" name="platos" value="pasta-carbonara" data-price="18000" class="mr-3 text-purple-600">
+                            <div class="w-16 h-16 mr-4 flex-shrink-0">
+                                <svg viewBox="0 0 100 100" class="w-full h-full">
+                                    <circle cx="50" cy="50" r="45" fill="#FFFACD" stroke="#F0E68C" stroke-width="2"/>
+                                    <path d="M20 30 Q30 25 40 30 Q50 35 60 30 Q70 25 80 30" stroke="#FFD700" stroke-width="3" fill="none"/>
+                                    <path d="M25 40 Q35 35 45 40 Q55 45 65 40 Q75 35 85 40" stroke="#FFD700" stroke-width="3" fill="none"/>
+                                    <path d="M20 50 Q30 45 40 50 Q50 55 60 50 Q70 45 80 50" stroke="#FFD700" stroke-width="3" fill="none"/>
+                                    <path d="M25 60 Q35 55 45 60 Q55 65 65 60 Q75 55 85 60" stroke="#FFD700" stroke-width="3" fill="none"/>
+                                    <circle cx="35" cy="45" r="2" fill="#8B4513"/>
+                                    <circle cx="65" cy="55" r="2" fill="#8B4513"/>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <span class="font-medium">Pasta Carbonara</span>
+                                <p class="text-sm text-gray-600">Pasta cremosa con tocino y queso parmesano</p>
+                            </div>
+                            <span class="font-semibold text-purple-600">$18,000</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Mobiliario -->
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <h2 class="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
+                        🪑 Mobiliario
+                    </h2>
+                    <div class="space-y-3">
+                        <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer">
+                            <input type="checkbox" name="mobiliario" value="mesas-elegantes" data-price="15000" class="mr-3 text-purple-600">
+                            <div class="flex-1">
+                                <span class="font-medium">Mesas Elegantes</span>
+                                <p class="text-sm text-gray-600">Mesas redondas con mantelería fina</p>
+                            </div>
+                            <span class="font-semibold text-purple-600">$15,000</span>
+                        </label>
+                        <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer">
+                            <input type="checkbox" name="mobiliario" value="sillas-premium" data-price="8000" class="mr-3 text-purple-600">
+                            <div class="flex-1">
+                                <span class="font-medium">Sillas Premium</span>
+                                <p class="text-sm text-gray-600">Sillas acolchadas con respaldo alto</p>
+                            </div>
+                            <span class="font-semibold text-purple-600">$8,000</span>
+                        </label>
+                        <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer">
+                            <input type="checkbox" name="mobiliario" value="decoracion-floral" data-price="12000" class="mr-3 text-purple-600">
+                            <div class="flex-1">
+                                <span class="font-medium">Decoración Floral</span>
+                                <p class="text-sm text-gray-600">Centros de mesa con flores frescas</p>
+                            </div>
+                            <span class="font-semibold text-purple-600">$12,000</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Espacios -->
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <h2 class="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
+                        🏛️ Espacios
+                    </h2>
+                    <div class="space-y-3">
+                        <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer">
+                            <input type="radio" name="espacios" value="salon-principal" data-price="50000" class="mr-3 text-purple-600">
+                            <div class="flex-1">
+                                <span class="font-medium">Salón Principal</span>
+                                <p class="text-sm text-gray-600">Capacidad para 150 personas</p>
+                            </div>
+                            <span class="font-semibold text-purple-600">$50,000</span>
+                        </label>
+                        <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer">
+                            <input type="radio" name="espacios" value="terraza-jardin" data-price="35000" class="mr-3 text-purple-600">
+                            <div class="flex-1">
+                                <span class="font-medium">Terraza Jardín</span>
+                                <p class="text-sm text-gray-600">Espacio al aire libre con vista panorámica</p>
+                            </div>
+                            <span class="font-semibold text-purple-600">$35,000</span>
+                        </label>
+                        <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer">
+                            <input type="radio" name="espacios" value="salon-intimo" data-price="25000" class="mr-3 text-purple-600">
+                            <div class="flex-1">
+                                <span class="font-medium">Salón Íntimo</span>
+                                <p class="text-sm text-gray-600">Perfecto para eventos pequeños (50 personas)</p>
+                            </div>
+                            <span class="font-semibold text-purple-600">$25,000</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Entradas -->
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <h2 class="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
+                        🥗 Entradas
+                    </h2>
+                    <div class="space-y-3">
+                        <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer">
+                            <input type="checkbox" name="entradas" value="tabla-quesos" data-price="8000" class="mr-3 text-purple-600">
+                            <div class="w-16 h-16 mr-4 flex-shrink-0">
+                                <svg viewBox="0 0 100 100" class="w-full h-full">
+                                    <rect x="10" y="20" width="80" height="60" fill="#8B4513" stroke="#654321" stroke-width="2" rx="5"/>
+                                    <circle cx="30" cy="40" r="8" fill="#FFD700"/>
+                                    <circle cx="50" cy="35" r="7" fill="#FFFACD"/>
+                                    <circle cx="70" cy="45" r="6" fill="#FFA500"/>
+                                    <circle cx="35" cy="60" r="5" fill="#F0F8FF"/>
+                                    <circle cx="65" cy="65" r="6" fill="#98FB98"/>
+                                    <path d="M15 75 L25 70 L35 75 L45 70 L55 75 L65 70 L75 75 L85 70" stroke="#228B22" stroke-width="2" fill="none"/>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <span class="font-medium">Tabla de Quesos</span>
+                                <p class="text-sm text-gray-600">Selección de quesos artesanales</p>
+                            </div>
+                            <span class="font-semibold text-purple-600">$8,000</span>
+                        </label>
+                        <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer">
+                            <input type="checkbox" name="entradas" value="ceviche" data-price="12000" class="mr-3 text-purple-600">
+                            <div class="w-16 h-16 mr-4 flex-shrink-0">
+                                <svg viewBox="0 0 100 100" class="w-full h-full">
+                                    <ellipse cx="50" cy="50" rx="40" ry="30" fill="#F0F8FF" stroke="#4682B4" stroke-width="2"/>
+                                    <circle cx="35" cy="40" r="4" fill="#FF6347"/>
+                                    <circle cx="55" cy="45" r="3" fill="#FF6347"/>
+                                    <circle cx="45" cy="35" r="3" fill="#FF6347"/>
+                                    <ellipse cx="30" cy="55" rx="6" ry="3" fill="#FFA500" transform="rotate(15 30 55)"/>
+                                    <ellipse cx="60" cy="60" rx="5" ry="2" fill="#FFA500" transform="rotate(-20 60 60)"/>
+                                    <ellipse cx="50" cy="65" rx="4" ry="2" fill="#FFA500" transform="rotate(30 50 65)"/>
+                                    <circle cx="40" cy="50" r="2" fill="#32CD32"/>
+                                    <circle cx="65" cy="45" r="1.5" fill="#32CD32"/>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <span class="font-medium">Ceviche de Camarón</span>
+                                <p class="text-sm text-gray-600">Fresco ceviche con camarones</p>
+                            </div>
+                            <span class="font-semibold text-purple-600">$12,000</span>
+                        </label>
+                        <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer">
+                            <input type="checkbox" name="entradas" value="bruschetta" data-price="6000" class="mr-3 text-purple-600">
+                            <div class="w-16 h-16 mr-4 flex-shrink-0">
+                                <svg viewBox="0 0 100 100" class="w-full h-full">
+                                    <ellipse cx="50" cy="60" rx="35" ry="15" fill="#DEB887" stroke="#CD853F" stroke-width="2"/>
+                                    <ellipse cx="50" cy="45" rx="30" ry="12" fill="#F5DEB3"/>
+                                    <circle cx="35" cy="40" r="3" fill="#FF6347"/>
+                                    <circle cx="50" cy="35" r="2.5" fill="#FF6347"/>
+                                    <circle cx="65" cy="42" r="3" fill="#FF6347"/>
+                                    <circle cx="45" cy="50" r="2" fill="#FF6347"/>
+                                    <path d="M30 30 Q35 25 40 30" stroke="#228B22" stroke-width="2" fill="none"/>
+                                    <path d="M55 28 Q60 23 65 28" stroke="#228B22" stroke-width="2" fill="none"/>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <span class="font-medium">Bruschetta Italiana</span>
+                                <p class="text-sm text-gray-600">Pan tostado con tomate y albahaca</p>
+                            </div>
+                            <span class="font-semibold text-purple-600">$6,000</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Bebidas -->
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <h2 class="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
+                        🍹 Bebidas
+                    </h2>
+                    <div class="space-y-3">
+                        <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer">
+                            <input type="checkbox" name="bebidas" value="whisky-premium" data-price="45000" class="mr-3 text-purple-600">
+                            <div class="w-16 h-16 mr-4 flex-shrink-0">
+                                <svg viewBox="0 0 100 100" class="w-full h-full">
+                                    <rect x="35" y="20" width="30" height="50" fill="#8B4513" stroke="#654321" stroke-width="2" rx="3"/>
+                                    <rect x="37" y="22" width="26" height="35" fill="#D2691E"/>
+                                    <rect x="30" y="70" width="40" height="15" fill="#8B4513" stroke="#654321" stroke-width="2" rx="5"/>
+                                    <circle cx="50" cy="77" r="3" fill="#FFD700"/>
+                                    <text x="50" y="45" text-anchor="middle" font-size="8" fill="#FFD700">W</text>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <span class="font-medium">Whisky Premium</span>
+                                <p class="text-sm text-gray-600">Johnnie Walker Black Label, Chivas Regal</p>
+                            </div>
+                            <span class="font-semibold text-purple-600">$45,000</span>
+                        </label>
+                        <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer">
+                            <input type="checkbox" name="bebidas" value="ron-premium" data-price="35000" class="mr-3 text-purple-600">
+                            <div class="w-16 h-16 mr-4 flex-shrink-0">
+                                <svg viewBox="0 0 100 100" class="w-full h-full">
+                                    <rect x="35" y="15" width="30" height="55" fill="#654321" stroke="#4A4A4A" stroke-width="2" rx="3"/>
+                                    <rect x="37" y="17" width="26" height="40" fill="#8B4513"/>
+                                    <rect x="30" y="70" width="40" height="15" fill="#654321" stroke="#4A4A4A" stroke-width="2" rx="5"/>
+                                    <circle cx="50" cy="77" r="3" fill="#C0C0C0"/>
+                                    <text x="50" y="40" text-anchor="middle" font-size="8" fill="#FFD700">R</text>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <span class="font-medium">Ron Premium</span>
+                                <p class="text-sm text-gray-600">Bacardi Reserva, Ron Zacapa</p>
+                            </div>
+                            <span class="font-semibold text-purple-600">$35,000</span>
+                        </label>
+                        <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer">
+                            <input type="checkbox" name="bebidas" value="vodka-premium" data-price="40000" class="mr-3 text-purple-600">
+                            <div class="w-16 h-16 mr-4 flex-shrink-0">
+                                <svg viewBox="0 0 100 100" class="w-full h-full">
+                                    <rect x="35" y="15" width="30" height="55" fill="#E6E6FA" stroke="#C0C0C0" stroke-width="2" rx="3"/>
+                                    <rect x="37" y="17" width="26" height="40" fill="#F0F8FF"/>
+                                    <rect x="30" y="70" width="40" height="15" fill="#C0C0C0" stroke="#A9A9A9" stroke-width="2" rx="5"/>
+                                    <circle cx="50" cy="77" r="3" fill="#C0C0C0"/>
+                                    <text x="50" y="40" text-anchor="middle" font-size="8" fill="#4169E1">V</text>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <span class="font-medium">Vodka Premium</span>
+                                <p class="text-sm text-gray-600">Grey Goose, Absolut Elyx</p>
+                            </div>
+                            <span class="font-semibold text-purple-600">$40,000</span>
+                        </label>
+                        <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer">
+                            <input type="checkbox" name="bebidas" value="vinos-importados" data-price="25000" class="mr-3 text-purple-600">
+                            <div class="w-16 h-16 mr-4 flex-shrink-0">
+                                <svg viewBox="0 0 100 100" class="w-full h-full">
+                                    <rect x="40" y="15" width="20" height="60" fill="#2F4F2F" stroke="#1C1C1C" stroke-width="2" rx="2"/>
+                                    <rect x="42" y="17" width="16" height="45" fill="#8B0000"/>
+                                    <circle cx="50" cy="12" r="4" fill="#FFD700"/>
+                                    <rect x="35" y="75" width="30" height="10" fill="#2F4F2F" stroke="#1C1C1C" stroke-width="2" rx="3"/>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <span class="font-medium">Vinos Importados</span>
+                                <p class="text-sm text-gray-600">Cabernet Sauvignon, Chardonnay francés</p>
+                            </div>
+                            <span class="font-semibold text-purple-600">$25,000</span>
+                        </label>
+                        <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer">
+                            <input type="checkbox" name="bebidas" value="cerveza-artesanal" data-price="15000" class="mr-3 text-purple-600">
+                            <div class="w-16 h-16 mr-4 flex-shrink-0">
+                                <svg viewBox="0 0 100 100" class="w-full h-full">
+                                    <rect x="35" y="25" width="30" height="50" fill="#DAA520" stroke="#B8860B" stroke-width="2" rx="5"/>
+                                    <rect x="37" y="27" width="26" height="35" fill="#FFD700"/>
+                                    <ellipse cx="50" cy="20" rx="8" ry="4" fill="#F5F5DC"/>
+                                    <circle cx="45" cy="45" r="2" fill="#FFF8DC" opacity="0.7"/>
+                                    <circle cx="55" cy="50" r="1.5" fill="#FFF8DC" opacity="0.7"/>
+                                    <circle cx="50" cy="55" r="2" fill="#FFF8DC" opacity="0.7"/>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <span class="font-medium">Cerveza Artesanal</span>
+                                <p class="text-sm text-gray-600">IPA, Lager, Wheat Beer</p>
+                            </div>
+                            <span class="font-semibold text-purple-600">$15,000</span>
+                        </label>
+                        <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer">
+                            <input type="checkbox" name="bebidas" value="cocteles-premium" data-price="30000" class="mr-3 text-purple-600">
+                            <div class="w-16 h-16 mr-4 flex-shrink-0">
+                                <svg viewBox="0 0 100 100" class="w-full h-full">
+                                    <path d="M30 70 L50 30 L70 70 Z" fill="#E6E6FA" stroke="#C0C0C0" stroke-width="2"/>
+                                    <path d="M32 65 L50 35 L68 65 Z" fill="#FFB6C1"/>
+                                    <rect x="48" y="70" width="4" height="20" fill="#C0C0C0"/>
+                                    <ellipse cx="50" cy="90" rx="8" ry="3" fill="#C0C0C0"/>
+                                    <circle cx="45" cy="50" r="2" fill="#FF69B4"/>
+                                    <circle cx="55" cy="55" r="1.5" fill="#32CD32"/>
+                                    <path d="M40 25 Q45 20 50 25" stroke="#228B22" stroke-width="2" fill="none"/>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <span class="font-medium">Cócteles Premium</span>
+                                <p class="text-sm text-gray-600">Mojito, Piña Colada, Cosmopolitan</p>
+                            </div>
+                            <span class="font-semibold text-purple-600">$30,000</span>
+                        </label>
+                        <label class="flex items-center p-3 border rounded-lg hover:bg-gray-50 cursor-pointer">
+                            <input type="checkbox" name="bebidas" value="bebidas-sin-alcohol" data-price="8000" class="mr-3 text-purple-600">
+                            <div class="w-16 h-16 mr-4 flex-shrink-0">
+                                <svg viewBox="0 0 100 100" class="w-full h-full">
+                                    <rect x="35" y="20" width="30" height="50" fill="#87CEEB" stroke="#4682B4" stroke-width="2" rx="5"/>
+                                    <rect x="37" y="22" width="26" height="35" fill="#ADD8E6"/>
+                                    <circle cx="45" cy="35" r="3" fill="#FF6347"/>
+                                    <circle cx="55" cy="40" r="2" fill="#32CD32"/>
+                                    <circle cx="50" cy="50" r="2.5" fill="#FFD700"/>
+                                    <path d="M40 25 Q45 20 50 25 Q55 20 60 25" stroke="#228B22" stroke-width="2" fill="none"/>
+                                    <rect x="30" y="70" width="40" height="8" fill="#4682B4" rx="4"/>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <span class="font-medium">Bebidas sin Alcohol</span>
+                                <p class="text-sm text-gray-600">Jugos naturales, gaseosas, agua saborizada</p>
+                            </div>
+                            <span class="font-semibold text-purple-600">$8,000</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Solicitudes Adicionales -->
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <h2 class="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
+                        📝 Solicitudes Adicionales
+                    </h2>
+                    <div class="space-y-4">
+                        <div>
+                            <label for="nombre-cliente" class="block text-sm font-medium text-gray-700 mb-2">Nombre completo</label>
+                            <input type="text" id="nombre-cliente" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent" placeholder="Tu nombre completo">
+                        </div>
+                        <div>
+                            <label for="telefono-cliente" class="block text-sm font-medium text-gray-700 mb-2">Teléfono</label>
+                            <input type="tel" id="telefono-cliente" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent" placeholder="Tu número de teléfono">
+                        </div>
+                        <div>
+                            <label for="email-cliente" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                            <input type="email" id="email-cliente" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent" placeholder="tu@email.com">
+                        </div>
+                        <div>
+                            <label for="fecha-evento" class="block text-sm font-medium text-gray-700 mb-2">Fecha del evento</label>
+                            <input type="date" id="fecha-evento" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="num-invitados" class="block text-sm font-medium text-gray-700 mb-2">Número de invitados</label>
+                            <input type="number" id="num-invitados" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent" placeholder="Ej: 50" min="1">
+                        </div>
+                        <div>
+                            <label for="solicitudes-adicionales" class="block text-sm font-medium text-gray-700 mb-2">Solicitudes o comentarios adicionales</label>
+                            <textarea id="solicitudes-adicionales" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent resize-none" placeholder="Describe cualquier solicitud especial, decoración temática, restricciones alimentarias, música preferida, etc."></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resumen de cotización -->
+            <div class="lg:col-span-1">
+                <div class="bg-white rounded-xl shadow-lg p-6 sticky top-8">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6 text-center">💰 Resumen de Cotización</h3>
+                    
+                    <div id="resumen-servicios" class="space-y-3 mb-6">
+                        <p class="text-gray-500 text-center italic">Selecciona servicios para ver el resumen</p>
+                    </div>
+                    
+                    <div class="border-t pt-4">
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-lg font-semibold">Total:</span>
+                            <span id="total-precio" class="text-2xl font-bold text-purple-600">$0</span>
+                        </div>
+                        
+                        <button id="btn-cotizar" class="w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white py-3 px-6 rounded-lg font-semibold hover:from-purple-700 hover:to-pink-700 transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed" disabled>
+                            📧 Enviar Cotización por Email
+                        </button>
+                        
+                        <button id="btn-whatsapp" class="w-full mt-3 bg-green-500 text-white py-3 px-6 rounded-lg font-semibold hover:bg-green-600 transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed" disabled>
+                            💬 Enviar por WhatsApp
+                        </button>
+                        
+                        <button id="btn-limpiar" class="w-full mt-3 bg-gray-200 text-gray-700 py-2 px-6 rounded-lg font-medium hover:bg-gray-300 transition-colors">
+                            Limpiar Selección
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let serviciosSeleccionados = {};
+        let totalPrecio = 0;
+
+        function actualizarCotizacion() {
+            const resumenDiv = document.getElementById('resumen-servicios');
+            const totalSpan = document.getElementById('total-precio');
+            const btnCotizar = document.getElementById('btn-cotizar');
+            const btnWhatsapp = document.getElementById('btn-whatsapp');
+            
+            // Limpiar resumen
+            resumenDiv.innerHTML = '';
+            totalPrecio = 0;
+            serviciosSeleccionados = {};
+            
+            // Obtener todos los inputs seleccionados
+            const inputsSeleccionados = document.querySelectorAll('input[type="radio"]:checked, input[type="checkbox"]:checked');
+            
+            if (inputsSeleccionados.length === 0) {
+                resumenDiv.innerHTML = '<p class="text-gray-500 text-center italic">Selecciona servicios para ver el resumen</p>';
+                btnCotizar.disabled = true;
+                btnWhatsapp.disabled = true;
+            } else {
+                btnCotizar.disabled = false;
+                btnWhatsapp.disabled = false;
+                
+                inputsSeleccionados.forEach(input => {
+                    const precio = parseInt(input.dataset.price);
+                    const nombre = input.parentElement.querySelector('.font-medium').textContent;
+                    const categoria = input.name;
+                    
+                    if (!serviciosSeleccionados[categoria]) {
+                        serviciosSeleccionados[categoria] = [];
+                    }
+                    
+                    serviciosSeleccionados[categoria].push({
+                        nombre: nombre,
+                        precio: precio
+                    });
+                    
+                    totalPrecio += precio;
+                    
+                    // Agregar al resumen
+                    const servicioDiv = document.createElement('div');
+                    servicioDiv.className = 'flex justify-between items-center py-2 border-b border-gray-100';
+                    servicioDiv.innerHTML = `
+                        <span class="text-sm text-gray-700">${nombre}</span>
+                        <span class="font-semibold text-purple-600">$${precio.toLocaleString()}</span>
+                    `;
+                    resumenDiv.appendChild(servicioDiv);
+                });
+            }
+            
+            // Actualizar total
+            totalSpan.textContent = `$${totalPrecio.toLocaleString()}`;
+        }
+
+        function limpiarSeleccion() {
+            // Desmarcar todos los inputs
+            document.querySelectorAll('input[type="radio"], input[type="checkbox"]').forEach(input => {
+                input.checked = false;
+            });
+            
+            // Actualizar cotización
+            actualizarCotizacion();
+        }
+
+        function obtenerDatosCliente() {
+            return {
+                nombre: document.getElementById('nombre-cliente').value || 'No especificado',
+                telefono: document.getElementById('telefono-cliente').value || 'No especificado',
+                email: document.getElementById('email-cliente').value || 'No especificado',
+                fecha: document.getElementById('fecha-evento').value || 'No especificada',
+                invitados: document.getElementById('num-invitados').value || 'No especificado',
+                solicitudes: document.getElementById('solicitudes-adicionales').value || 'Ninguna'
+            };
+        }
+
+        function generarMensajeCotizacion() {
+            const cliente = obtenerDatosCliente();
+            
+            let mensaje = '🎉 COTIZACIÓN DE EVENTO 🎉\n\n';
+            mensaje += '👤 DATOS DEL CLIENTE:\n';
+            mensaje += `• Nombre: ${cliente.nombre}\n`;
+            mensaje += `• Teléfono: ${cliente.telefono}\n`;
+            mensaje += `• Email: ${cliente.email}\n`;
+            mensaje += `• Fecha del evento: ${cliente.fecha}\n`;
+            mensaje += `• Número de invitados: ${cliente.invitados}\n\n`;
+            
+            mensaje += '📋 SERVICIOS SELECCIONADOS:\n\n';
+            
+            for (const [categoria, servicios] of Object.entries(serviciosSeleccionados)) {
+                mensaje += `${categoria.toUpperCase()}:\n`;
+                servicios.forEach(servicio => {
+                    mensaje += `   • ${servicio.nombre} - $${servicio.precio.toLocaleString()}\n`;
+                });
+                mensaje += '\n';
+            }
+            
+            mensaje += `💰 TOTAL: $${totalPrecio.toLocaleString()}\n\n`;
+            mensaje += `📝 SOLICITUDES ADICIONALES:\n${cliente.solicitudes}\n\n`;
+            mensaje += '¡Gracias por tu interés! Te contactaremos pronto para confirmar los detalles.';
+            
+            return mensaje;
+        }
+
+        function enviarPorEmail() {
+            if (Object.keys(serviciosSeleccionados).length === 0) {
+                alert('Por favor selecciona al menos un servicio');
+                return;
+            }
+            
+            const mensaje = generarMensajeCotizacion();
+            const cliente = obtenerDatosCliente();
+            
+            const subject = encodeURIComponent(`Cotización de Evento - ${cliente.nombre}`);
+            const body = encodeURIComponent(mensaje);
+            
+            const mailtoLink = `mailto:yasser26ah@gmail.com?subject=${subject}&body=${body}`;
+            
+            window.open(mailtoLink, '_blank');
+            
+            alert('Se abrirá tu cliente de correo para enviar la cotización. Si no se abre automáticamente, copia y pega la información manualmente.');
+        }
+
+        function enviarPorWhatsApp() {
+            if (Object.keys(serviciosSeleccionados).length === 0) {
+                alert('Por favor selecciona al menos un servicio');
+                return;
+            }
+            
+            const mensaje = generarMensajeCotizacion();
+            const mensajeCodificado = encodeURIComponent(mensaje);
+            
+            const whatsappLink = `https://wa.me/573013350490?text=${mensajeCodificado}`;
+            
+            window.open(whatsappLink, '_blank');
+        }
+
+        // Event listeners
+        document.addEventListener('change', actualizarCotizacion);
+        document.getElementById('btn-limpiar').addEventListener('click', limpiarSeleccion);
+        document.getElementById('btn-cotizar').addEventListener('click', enviarPorEmail);
+        document.getElementById('btn-whatsapp').addEventListener('click', enviarPorWhatsApp);
+
+        // Inicializar
+        actualizarCotizacion();
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'976ece85822b0ce3',t:'MTc1NjQ5OTQzMS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
